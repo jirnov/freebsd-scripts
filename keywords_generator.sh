@@ -69,7 +69,7 @@ get_post_content() {
 
 cd /usr/local/www/wordpress || exit
 
-posts_data=$(wp post list --allow-root --post_type=post --fields=ID,post_title,post_content,b2k_post_keywords --format=json --post_status=publish)
+posts_data=$(wp post list --allow-root --post_type=post --fields=ID,post_title,post_content --format=json --post_status=publish)
 
 post_ids=$(echo "$posts_data" | jq .[].ID)
 
