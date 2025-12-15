@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Конфигурация
-source .env
+source ~/.env
 FOLDER_ID=$YANDEXGPT_FOLDER_ID
 API_KEY=$YANDEXGPT_API_KEY
 API_URL="https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
